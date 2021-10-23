@@ -78,8 +78,7 @@ Routes:
         DangerousAcceptAnyServerCertificateValidator: true
         AddHeadersToRequest:
             AgentLogin: Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier] > value[0] > |
-
-     -       
+    -
         DownstreamPathTemplate: /api/Report
         DownstreamScheme: http
         UpstreamPathTemplate: /api/Report
@@ -95,6 +94,7 @@ Routes:
         DangerousAcceptAnyServerCertificateValidator: true
         AddHeadersToRequest:
             AgentLogin: Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier] > value[0] > |
+
     -
         DownstreamPathTemplate: /api/Policies
         DownstreamScheme: http
